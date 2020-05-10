@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+{% block head %}
+    <title>Rafael Neves</title>
+{% endblock %}
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <a href="/">Sobre</a>
+            <a href="/contents">Conteúdos</a>
+            <a href="/classes">Aulas</a>
+        </div>
+    </header>
+
+    {%block content %} {% endblock %}
+
+</body>
+</html>

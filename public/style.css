@@ -1,0 +1,292 @@
+:root {
+     --color-green: #50fa7b;
+     --color-rocket: #7159c1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*** FAVICON ***/
+
+body {
+    background-color:  #282a36;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;    
+}
+/*** Cabeçalho ***/
+header{
+    padding:30px ;
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0px;
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 20px 0px 0px;
+}
+
+.links a:hover{
+    color: var(--color-green);
+    transition: color 200ms;
+}
+/*** Conteudo Página ***/
+.wrapper{
+    text-align: center;
+    padding: 20px;
+}
+
+.wrapper img{
+    border-radius: 50%;
+    align-items: center;
+    height: 400px;
+    border: 5px solid white;
+}
+
+.wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.wrapper p{
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.wrapper p a{
+    color: white;
+    font-size: 24px;
+    line-height: 34px; 
+    margin: 32px 20px 32px 0px;
+    border-bottom: 1px solid  var(--color-green);
+    text-decoration: none;
+}
+
+.wrapper p a:hover{
+    color: var(--color-green);
+    transition: color 200ms;
+}
+
+
+.midia{
+    text-align: center;
+}
+
+.midia img{
+    height: 60px;
+    max-width: 500px;
+    margin: 15px;
+    
+}
+
+
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    background-color: var(--color-rocket);
+}
+
+.card__image-container img{
+    width: 100%;
+}
+
+.card__content, 
+.card__info{
+    padding:24px;
+
+}
+
+.card__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price{
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*** MODAL ***/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color:black;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: white;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+/*** MODAL - ACTIVE ***/
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+/*** CONTENTS ***/
+
+.contents{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.grade{
+    background-color: #32333b93;
+    opacity: 90%;
+    text-align: center;
+    border-radius: 10%;
+    height: 300px;
+
+}
+ 
+.content__image-container img{
+    padding: 20px 0px;
+}
+
+.info-a{
+    color: var(--color-rocket);
+    font-weight: bold;
+}
+
+.info-b{
+    color: orange;
+    font-weight: bold;
+}
+
+.info-c{
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+.content__info{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 5px;
+    
+}
+
+.content__price{
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+    width: 50px;
+    text-align: center;
+}
+
+/**---GRADE---**/
+
+.grade-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.display{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.display .close-grade {
+    color: black;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+/*** GRADE - ACTIVE ***/
+
+.grade-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+/*** GRADE - MAXIMIZE ***/
+
+.display.maximize {
+    width: 100%;
+    height: 100%;
+    margin:0 auto
+}
+
+.display .maximize-grade{
+    color: black;
+    position: absolute;
+    right:40px;
+    top:8px;
+    cursor: pointer;
+}

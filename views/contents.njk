@@ -1,0 +1,72 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+<title>Conteúdo - Rafael Neves</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel=" shortcut icon" href="assets/favicon.ico" type="image/x-icon"/>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="wrapper">
+    <h1>Conteúdos</h1>
+</div>
+
+<section class="contents">
+
+    <div class="grade" id="starter">
+        <div class="content__image-container">
+            <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Git e Github">
+        </div>
+        <div class="info-a">
+            <p>Torne-se um programador desejado</p>
+        </div>
+        <div class="content__info">
+            <p>5 módulos</p>
+            <p class="content__price">Gratuito</p>
+        </div>
+    </div>
+
+    <div class="grade" id="launchbase">
+        <div class="content__image-container">
+            <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="Git e Github">
+        </div>
+        <div class="info-b">
+            <p>Treinamento imersivo</p>
+        </div>
+        <div class="content__info">
+            <p>12 módulos</p>
+            <p class="content__price">Pago</p>
+        </div>
+    </div>
+
+    <div class="grade" id="gostack">
+        <div class="content__image-container">
+            <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="Git e Github">
+        </div>
+        <div class="info-c">
+            <p>Treinamento imersivo</p>
+        </div>
+        <div class="content__info">
+            <p>12 módulos</p>
+            <p class="content__price">Pago</p>
+        </div>
+    </div>
+
+</section>
+
+<div class="grade-overlay">
+    <div class="display">
+        <a class="close-grade"><span class="material-icons">close</span></a>
+        <a class="maximize-grade"><span class="material-icons">maximize</span></a>
+        <div class="grade-content">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="/script2.js"></script>
+
+{% endblock %}
