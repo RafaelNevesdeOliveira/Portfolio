@@ -16,44 +16,21 @@
 
     <section class="contents">
 
-        <div class="grade" id="starter">
+        {% for site in sites %}
+
+        <div class="grade" id="{{site.link}}">
             <div class="content__image-container">
-                <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Git e Github">
+                <img src="https://skylab.rocketseat.com.br/static/{{site.ilustration}}.svg" alt="Imagem de {{site.theme}}">
             </div>
             <div class="info-a">
-                <p>Torne-se um programador desejado</p>
+                <p>{{site.theme}}</p>
             </div>
             <div class="content__info">
-                <p>5 módulos</p>
-                <p class="content__price">Gratuito</p>
+                <p>{{site.time}}</p>
+                <p class="content__price">{{site.condition}}</p>
             </div>
         </div>
-
-        <div class="grade" id="launchbase">
-            <div class="content__image-container">
-                <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="Git e Github">
-            </div>
-            <div class="info-b">
-                <p>Treinamento imersivo</p>
-            </div>
-            <div class="content__info">
-                <p>12 módulos</p>
-                <p class="content__price">Pago</p>
-            </div>
-        </div>
-
-        <div class="grade" id="gostack">
-            <div class="content__image-container">
-                <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="Git e Github">
-            </div>
-            <div class="info-c">
-                <p>Treinamento imersivo</p>
-            </div>
-            <div class="content__info">
-                <p>12 módulos</p>
-                <p class="content__price">Pago</p>
-            </div>
-        </div>
+        {% endfor %}
 
     </section>
 
