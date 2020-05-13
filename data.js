@@ -4,6 +4,7 @@ module.exports = [
         title: "GIT e GITHUB na prática" ,
         duration: "34 min" ,
         price: "Free" ,
+        featured: true
     },
     {
         id: "HN1UjzRSdBk" ,
@@ -16,6 +17,7 @@ module.exports = [
         title: "Criando Player de Áudio" ,
         duration: "1 h 45 min" ,
         price: "Free" ,
+        featured: true
     }, 
     {
         id: "rAzHvYnQ8DY" ,
@@ -28,6 +30,7 @@ module.exports = [
         title: "Desvendando a variável This" ,
         duration: "49 min" ,
         price: "Free" ,
+        featured: true
     }, 
     {
         id: "ghTrp1x_1As" ,

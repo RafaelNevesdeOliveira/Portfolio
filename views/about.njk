@@ -2,20 +2,20 @@
 
 {% block content %}
 
-
     <div class="wrapper">
-        <img src="assets/eu.png" alt="Foto Minha">
-        <h1>Rafael Neves de Oliveira</h1>
-        <h2>Estudante de Analise e Desenvolvimento de Sistema - Universidade Presbiteriana Mackenzie</h2>
-        <p>Atividades Atuais - 
-            <a href="https://rocketseat.com.br/launchbase" target="_blank">RocketSeat</a>
-            <a href="https://www.mackenzie.br/" target="_blank">Mackenzie</a>
-        
-        </p>   
+        <img src="{{ about.avatar_path }}" alt="Imagem de {{about.name}}">
+        <h1>{{about.name}}</h1>
+        <h2>{{about.description}}</h2>
+        <p>    Atividades Atuais -
+            {% for activitie in about.activities %}
+                <a href="{{activitie.url}}" target="_blank">{{activitie.name}}</a>
+            {% endfor %}
+        </p>
     </div>
     <div class="midia">
-        <a href="https://www.instagram.com/rafaol__/" target="_blank"><img src="assets/instagram.png" alt="instagram"></a>
-        <a href="https://www.facebook.com/rafael.neves.737" target="_blank"><img src="assets/facebook.png" alt="facebook"></a>
+        {% for link in about.links %}
+            <a href="{{link.url}}" target="_blank"><img src="{{link.image_path}}" alt="imagem de {{link.url}}}"></a>
+        {% endfor %}
     </div>
 
 {% endblock %}

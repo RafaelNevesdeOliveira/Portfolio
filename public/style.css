@@ -101,6 +101,12 @@ header{
     
 }
 
+/***CARDS***/
+.card{
+    background-color: var(--color-rocket);
+    display: grid;
+    cursor: pointer;
+}
 
 
 .cards{
@@ -111,18 +117,17 @@ header{
     gap: 20px;
 }
 
-.card{
-    background-color: var(--color-rocket);
-}
 
 .card__image-container img{
     width: 100%;
 }
 
-.card__content, 
+.content, 
 .card__info{
-    padding:24px;
-
+    padding: 24px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
 }
 
 .card__info{
@@ -195,6 +200,8 @@ iframe{
     text-align: center;
     border-radius: 10%;
     height: 300px;
+    display: grid;
+    cursor: pointer;
 
 }
  
@@ -221,7 +228,7 @@ iframe{
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 5px;
-    
+    align-items: center;
 }
 
 .content__price{
@@ -289,4 +296,20 @@ iframe{
     right:40px;
     top:8px;
     cursor: pointer;
+}
+
+/*** FEATURED ***/
+
+.featured-wapper.card__image-container{
+    position: relative;
+}
+.featured{
+    position: absolute;
+    background: #f7d05f;
+    color: #111111;
+    padding: 2px 8px;
+    right: 5px;
+    border-radius: 16px;
+    top: -8px;
+    font-weight: bold;
 }
