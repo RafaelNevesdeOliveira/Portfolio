@@ -2,8 +2,8 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 
 const server = express();
-const datas = require("./data");
 const pages = require("./data2");
+const videos = require("./data");
 
 server.use(express.static("public"));
 
@@ -41,7 +41,21 @@ server.get("/contents", function(req, res){
 
 server.get("/classes", function(req, res){
 
-    return res.render("classes", { items: datas });
+    return res.render("classes", { items: videos });
+})
+
+server.get("/video", function(req, res){
+    const id = req.query.id
+
+    const video = videos.find(function(video){
+        if (video.id == id){
+            return true
+        }
+    })
+    if (!video){
+        return res.send("Video not found!")
+    }
+    return res.render("video", {item: video})
 })
 
 server.listen(5000, function(){
