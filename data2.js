@@ -1,24 +1,24 @@
 module.exports = [
     {
-        link: "starter" ,
-        theme: "Torne-se um programador desejado" ,
-        ilustration: "https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg",
+        id: "https://facebook.com/rafael.neves.737" ,
+        theme: "Perfil Facebook" ,
+        ilustration: "https://image.freepik.com/fotos-gratis/pile-of-3d-facebook-logos_1379-875.jpg",
         time: "5 módulos" ,
-        condition: "Gratuito" ,
+        condition: "Atualizado" ,
     },
     {
-        link: "launchbase" ,
-        theme: "Treinamento imersivo" ,
-        ilustration: "https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg", 
-        time: "12 módulos" ,
-        condition: "Pago" ,
+        id: "https://mangalivre.net/" ,
+        theme: "Perfil LinkedIn" ,
+        ilustration: "https://image.freepik.com/fotos-gratis/smartphone-com-logotipo-do-linkedin-na-tela_89286-44.jpg", 
+        time: "2 Repositórios" ,
+        condition: "Atualizado" ,
     },
     {
-        link: "gostack" ,
-        theme: "Treinamento imersivo" ,
-        ilustration: "https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" , 
-        time: "12 módulos" ,
-        condition: "Pago" ,
+        id: "https://www.rihappy.com.br/brinquedos?menu_header" ,
+        theme: "Perfil Github" ,
+        ilustration: "https://image.flaticon.com/icons/png/512/38/38401.png" , 
+        time: "2 Repositórios" ,
+        condition: "Atualizado" ,
     }
 ]
 

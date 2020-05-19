@@ -11,14 +11,14 @@
 {% block content %}
 
     <div class="wrapper">
-        <h1>Conteúdos</h1>
+        <h1>Redes Sociais</h1>
     </div>
 
     <section class="contents">
 
         {% for site in sites %}
 
-        <div class="grade" id="{{site.link}}">
+        <div class="grade" id="{{site.id}}">
             <div class="content__image-container">
                 <img src="{{site.ilustration}}" alt="Imagem de {{site.theme}}">
             </div>
@@ -48,6 +48,6 @@
         </div>
     </div>
 
-    <script src="/script2.js"></script>
+    <script src="/script.js"></script>
 
 {% endblock %}
